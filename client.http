@@ -1,0 +1,81 @@
+# Listar Todas Empresas
+GET http://localhost:8080/api/empresa/
+###
+
+# Apagar Empresa
+DELETE http://localhost:8080/api/empresa/1
+
+###
+
+# Cadastrar Empresa
+POST http://localhost:8080/api/empresa
+Content-Type: application/json
+
+{
+      "nome": "FIAP",
+      "cnpj": "04.030.647/0002-01",
+      "descricao": "Faculdade de Tecnologia",
+      "email": "fiapeducacao@gmail.com",
+      "senha": "fiap007",
+      "compra": "2010-02-27T02:00:00.000+00:00",
+      "valorCompra": 1500.00,
+      "statusCompra": "Aguardando pagamento"
+    }
+###
+
+
+# Alterar Empresa
+PUT http://localhost:8080/api/empresa/4
+Content-type: application/json
+
+{
+      "nome": "FIAP",
+      "cnpj": "04.030.647/0002-01",
+      "descricao": "Faculdade de Tecnologia",
+      "email": "fiapadm@gmail.com",
+      "senha": "fiap007",
+      "compra": "2010-02-27T02:00:00.000+00:00",
+      "valorCompra": 1500.00,
+      "statusCompra": "Aguardando pagamento"
+}
+
+###
+
+# Listar Todos Aplicacoes
+GET http://localhost:8080/api/aplicacao
+###
+
+# Apagar Aplicacao
+DELETE http://localhost:8080/api/aplicacao/1
+
+###
+
+# Cadastrar Aplicacao
+POST http://localhost:8080/api/aplicacao
+Content-Type: application/json
+
+{
+      "id_empresa": 2,
+      "nome": "Portal",
+      "botoes": 2,
+      "entrada_dados": 4,
+      "links": 1
+    }
+###
+
+
+# Alterar Aplicacao
+PUT http://localhost:8080/api/aplicacao/2
+Content-type: application/json
+
+{
+      "id_empresa": 2,
+      "nome": "Portal",
+      "botoes": 2,
+      "entrada_dados": 2,
+      "links": 1
+    }
+
+###
+
+
